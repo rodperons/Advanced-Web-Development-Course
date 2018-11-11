@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>index</title>
+	<title>snippets</title>
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,22 +12,32 @@
 <body>
 
 	<div class="topnav" id="myTopnav">
-	  <a href="index.html" class="active">Home</a>
+	  <a href="index.html">Home</a>
 	  <a href="parallax.html">Parallax</a>
 	  <a href="slideshow.html">Slideshow</a>
-	  <a href="snippets.html">Snippets</a>
+	  <a href="snippets.html" class="active">Snippets</a>
 	  <a href="login.html">Login</a>
 	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
 		<i class="fa fa-bars"></i>
 	  </a>
 	</div>
+	
+	<div class="mainSnippets">
 
-	<div class="main">
-	<div style="padding-left:16px">
-	  <h2>Home page</h2>
-	  <p>More to come here...</p>
+	  <h2>Railway engines</h2>
+
+	<!-- Only runs in Firefox in Local -->
+    <div id = "snippet">
+        <a  href="javascript:void(0);" onclick="loadSnippet('steam')" >Steam</a>
+        <a  href="javascript:void(0);" onclick="loadSnippet('diesel')" >Diesel</a>
+        <a  href="javascript:void(0);" onclick="loadSnippet('electric')" >Electric</a>
+    </div>
+	
+	<div id="content">
+    </div>
+	
 	</div>
-	</div>
+
 
   <script>
 	function myFunction() {
@@ -38,6 +48,10 @@
 			x.className = "topnav";
 		}
 	}
+
 	</script>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

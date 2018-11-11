@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>index</title>
+	<title>parallax</title>
 	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -12,8 +12,8 @@
 <body>
 
 	<div class="topnav" id="myTopnav">
-	  <a href="index.html" class="active">Home</a>
-	  <a href="parallax.html">Parallax</a>
+	  <a href="index.html">Home</a>
+	  <a href="parallax.html" class="active">Parallax</a>
 	  <a href="slideshow.html">Slideshow</a>
 	  <a href="snippets.html">Snippets</a>
 	  <a href="login.html">Login</a>
@@ -21,23 +21,27 @@
 		<i class="fa fa-bars"></i>
 	  </a>
 	</div>
+	
 
-	<div class="main">
-	<div style="padding-left:16px">
-	  <h2>Home page</h2>
-	  <p>More to come here...</p>
-	</div>
+	<div class="parallax" style="background-image: url('img/imgRail2.jpg')"></div>
+
+	<div style="height:200px;background-color:red;font-size:36px">
+	Parallax with two images
 	</div>
 
-  <script>
-	function myFunction() {
-		var x = document.getElementById("myTopnav");
-		if (x.className === "topnav") {
-			x.className += " responsive";
-		} else {
-			x.className = "topnav";
+	<div class="parallax"style="background-image: url('img/imgRail8.jpg')"></div>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
 		}
-	}
 	</script>
+
+  
 </body>
 </html>
